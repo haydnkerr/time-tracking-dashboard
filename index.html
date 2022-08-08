@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet"> 
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="profile-card-container">
+        <div class="profile-info-container">
+          <img src="images/image-jeremy.png">
+          <div class="profile-info">
+            <h4>Report for</h4>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+
+        <ul class="tabs">
+            <li data-tab-target="#daily"  class="tab active"><h3>Daily</h3></li>
+            <li data-tab-target="#weekly" class="tab"><h3>Weekly</h3></li>
+            <li data-tab-target="#monthly"  class="tab"><h3>Monthly</h3></li>
+        </ul>
+      </div>
+    </header>
+
+    <article id="daily" data-tab-content class="stats-container active">
+      <div class="stat-card-background work-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Work</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>5hrs</h2>
+            <h4>Yesterday - 7hrs</h4>
+          </div>
+        </div>
+      </div>
+    
+      <div class="stat-card-background play-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Play</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>1hr</h2>
+            <h4>Yesterday - 2hrs</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card-background study-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Study</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>0hrs</h2>
+            <h4>Yesterday - 1hr</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card-background exercise-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Exercise</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>1hr</h2>
+            <h4>Yesterday - 1hr</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card-background social-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Social</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>1hr</h2>
+            <h4>Yesterday - 3hrs</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card-background self-care-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Self Care</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>0hrs</h2>
+            <h4>Yesterday - 1hr</h4>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="weekly" data-tab-content class="stats-container">
+      <div class="stat-card-background work-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Work</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>32hrs</h2>
+            <h4>Last Week - 36hrs</h4>
+          </div>
+        </div>
+      </div>
+    
+      <div class="stat-card-background play-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Play</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>10hrs</h2>
+            <h4>Last Week - 8hrs</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card-background study-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Study</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>4hrs</h2>
+            <h4>Last Week - 7hrs</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card-background exercise-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Exercise</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>4hrs</h2>
+            <h4>Last Week - 5hrs</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card-background social-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Social</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>5hr</h2>
+            <h4>Last Week - 10hrs</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card-background self-care-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Self Care</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>2hrs</h2>
+            <h4>Last Week - 2hrs</h4>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="monthly" data-tab-content class="stats-container">
+      <div class="stat-card-background work-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Work</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>103hrs</h2>
+            <h4>Last Month - 128hrs</h4>
+          </div>
+        </div>
+      </div>
+    
+      <div class="stat-card-background play-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Play</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>23hrs</h2>
+            <h4>Last Month - 29hrs</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card-background study-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Study</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>13hrs</h2>
+            <h4>Last Month - 19hrs</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card-background exercise-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Exercise</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>11hrs</h2>
+            <h4>Last Month - 18hrs</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card-background social-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Social</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>21hrs</h2>
+            <h4>Last Month - 23hrs</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card-background self-care-background">
+        <div class="stat-info-container">
+          <div class="stat-title">
+            <h3>Self Care</h3>
+            <img src="./images/icon-ellipsis.svg">
+          </div>
+          <div class="stat-numbers">
+            <h2>7hrs</h2>
+            <h4>Last Month - 11hrs</h4>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Haydn Kerr</a>.
+  </div>
+
+  
+</body>
+</html>
